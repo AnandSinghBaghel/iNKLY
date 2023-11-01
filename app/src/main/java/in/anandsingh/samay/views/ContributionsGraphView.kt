@@ -28,7 +28,7 @@ class ContributionsGraphView(context: Context, attrs: AttributeSet) : View(conte
         val calendar = Calendar.getInstance()
         val daysInMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH)
         val blockSize = width  // Adjust block size as needed
-        val blockMargin = 2  // Adjust margin for smaller spacing between blocks
+        val blockMargin = blockSize / 4  // Adjust margin for smaller spacing between blocks
         val radius = blockSize / 4f  // Adjust radius for rounded blocks
 
         // Set calendar to the first day of the month
@@ -43,7 +43,7 @@ class ContributionsGraphView(context: Context, attrs: AttributeSet) : View(conte
 
             paint.color = when {
                 count > 0 -> Color.GREEN
-                else -> Color.GRAY
+                else -> Color.LTGRAY
             }
 
             // Draw the rounded block
