@@ -21,11 +21,17 @@ interface NoteDao {
     @Query("SELECT * FROM notes ORDER BY timestamp DESC")
     fun getAllNotes(): LiveData<List<Note>>
 
-    @Query("""
+    @Query(
+        """
     SELECT strftime('%Y-%m-%d', timestamp / 1000, 'unixepoch') as date, COUNT(*) as count
     FROM notes
     GROUP BY date
     ORDER BY date DESC
-    """)
+    """
+    )
     fun getNotesCountPerDay(): LiveData<List<NoteCountPerDay>>
+
+    @Query("SELECT * FROM notes WHERE content LIKE :query")
+    fun getFilteredNotes(query: String): List<Note>
+
 }

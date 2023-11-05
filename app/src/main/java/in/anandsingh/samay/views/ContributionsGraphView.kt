@@ -1,12 +1,12 @@
 package `in`.anandsingh.samay.views
 
 import android.content.Context
-import android.util.AttributeSet
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
 import android.graphics.RectF
+import android.util.AttributeSet
 import android.view.View
 import java.text.SimpleDateFormat
 import java.util.Calendar

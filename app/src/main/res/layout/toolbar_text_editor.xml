@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="7">
+
+    <ImageButton
+        android:id="@+id/button_bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/bold"
+        android:src="@drawable/ic_format_bold" />
+
+    <ImageButton
+        android:id="@+id/button_italic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/italic"
+        android:src="@drawable/ic_format_italic" />
+
+    <ImageButton
+        android:id="@+id/button_underline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/underline"
+        android:src="@drawable/ic_format_underlined" />
+
+    <ImageButton
+        android:id="@+id/button_strike"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/strikethrough"
+        android:src="@drawable/ic_format_strikethrough" />
+
+    <ImageButton
+        android:id="@+id/button_bullet_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/bullet_list"
+        android:src="@drawable/ic_format_list_bulleted" />
+
+    <ImageButton
+        android:id="@+id/button_numbered_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/numbered_list"
+        android:src="@drawable/ic_format_list_numbered" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_save"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#6200EE"
+        android:text="Save"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

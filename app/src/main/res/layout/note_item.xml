@@ -13,32 +13,22 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/text_view_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline6" />
-
-        <!--<TextView
-            android:id="@+id/text_view_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceBody2"
-            android:layout_marginTop="8dp" />-->
-
-        <TextView
             android:id="@+id/markdown_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:singleLine="false" />
 
         <TextView
             android:id="@+id/text_view_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceBody2"
-            android:layout_marginTop="8dp" />
-
-
+            android:layout_marginTop="8dp"
+            android:textColor="#673AB7"
+            android:textSize="10sp" />
     </LinearLayout>
 
+
 </com.google.android.material.card.MaterialCardView>
+
 
