@@ -1,3 +1,5 @@
+![iNKLY](demo.gif)
+
 # iNKLY: Your Daily Reflection Companion
 
 iNKLY is an intuitive Android application designed to capture your daily reflections in a structured and organized manner.
